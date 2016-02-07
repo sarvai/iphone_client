@@ -1,0 +1,3 @@
+This is a very simple network camera application for iOS. When run, it will
+start a web server that will take a photo from the rear camera whenever it
+receives any HTTP GET request, and reply with the captured image.
