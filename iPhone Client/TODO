@@ -1,0 +1,12 @@
+Higher priority:
+* Add some kind of security so random web bots don't start taking photos (at
+  least HTTP Basic)
+* Disable camera sound if possible
+* Add license, include GCDWebServer's license
+* Disable rotation since UI doesn't handle it right now
+* Add some kind of error handling--currently some are swallowed and some make
+  the web server send empty 500 replies.
+
+Nice to have, maybe:
+* Allow selection of which camera to use in UI
+* Allow selection of image quality in UI and/or as HTTP request parameter
