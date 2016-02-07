@@ -10,6 +10,17 @@ import UIKit
 
 class ViewController: UIViewController {
 
+  var server: CameraServer?
+
+  @IBOutlet weak var urlLabel: UILabel!
+
+  override func viewWillAppear(animated: Bool) {
+    super.viewWillAppear(animated)
+
+    server = CameraServer()
+    urlLabel.text = server!.webServer.serverURL.absoluteString
+  }
+
   override func viewDidLoad() {
     super.viewDidLoad()
     // Do any additional setup after loading the view, typically from a nib.

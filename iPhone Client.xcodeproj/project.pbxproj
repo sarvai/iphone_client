@@ -28,6 +28,7 @@
 		B714C5CD1C663F31006AA5A7 /* GCDWebServerErrorResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = B714C5BE1C663F31006AA5A7 /* GCDWebServerErrorResponse.m */; };
 		B714C5CE1C663F31006AA5A7 /* GCDWebServerFileResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = B714C5C01C663F31006AA5A7 /* GCDWebServerFileResponse.m */; };
 		B714C5CF1C663F31006AA5A7 /* GCDWebServerStreamedResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = B714C5C21C663F31006AA5A7 /* GCDWebServerStreamedResponse.m */; };
+		B714C5D21C66896B006AA5A7 /* CameraServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B714C5D11C66896B006AA5A7 /* CameraServer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,6 +92,7 @@
 		B714C5C11C663F31006AA5A7 /* GCDWebServerStreamedResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServerStreamedResponse.h; sourceTree = "<group>"; };
 		B714C5C21C663F31006AA5A7 /* GCDWebServerStreamedResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDWebServerStreamedResponse.m; sourceTree = "<group>"; };
 		B714C5D01C663F3B006AA5A7 /* iPhone-Client-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "iPhone-Client-Bridging-Header.h"; sourceTree = "<group>"; };
+		B714C5D11C66896B006AA5A7 /* CameraServer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraServer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +148,7 @@
 			isa = PBXGroup;
 			children = (
 				B714C50B1C6633D5006AA5A7 /* AppDelegate.swift */,
+				B714C5D11C66896B006AA5A7 /* CameraServer.swift */,
 				B714C50D1C6633D5006AA5A7 /* ViewController.swift */,
 				B714C50F1C6633D5006AA5A7 /* Main.storyboard */,
 				B714C5121C6633D5006AA5A7 /* Assets.xcassets */,
@@ -376,6 +379,7 @@
 				B714C5C61C663F31006AA5A7 /* GCDWebServerRequest.m in Sources */,
 				B714C5CD1C663F31006AA5A7 /* GCDWebServerErrorResponse.m in Sources */,
 				B714C5CC1C663F31006AA5A7 /* GCDWebServerDataResponse.m in Sources */,
+				B714C5D21C66896B006AA5A7 /* CameraServer.swift in Sources */,
 				B714C5C31C663F31006AA5A7 /* GCDWebServer.m in Sources */,
 				B714C5CA1C663F31006AA5A7 /* GCDWebServerMultiPartFormRequest.m in Sources */,
 			);

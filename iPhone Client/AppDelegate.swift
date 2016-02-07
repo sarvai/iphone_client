@@ -15,16 +15,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
   func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-    let webServer = GCDWebServer()
-
-    webServer.addDefaultHandlerForMethod("GET", requestClass: GCDWebServerRequest.self, processBlock: {request in
-      return GCDWebServerDataResponse(HTML:"<html><body><p>Hello World</p></body></html>")
-    })
-
-    webServer.startWithPort(8080, bonjourName: "GCD Web Server")
-
-    print("Visit \(webServer.serverURL) in your web browser")
-
     return true
   }
 
