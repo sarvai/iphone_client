@@ -247,7 +247,7 @@ NSString* GCDWebServerGetPrimaryIPAddress(BOOL useIPv6) {
   NSString* address = nil;
 #if TARGET_OS_IPHONE
 #if !TARGET_IPHONE_SIMULATOR && !TARGET_OS_TV
-  const char* primaryInterface = "en0";  // WiFi interface on iOS
+//  const char* primaryInterface = "en0";  // WiFi interface on iOS
 #endif
 #else
   const char* primaryInterface = NULL;
@@ -272,7 +272,10 @@ NSString* GCDWebServerGetPrimaryIPAddress(BOOL useIPv6) {
         // Assumption holds for Apple TV running tvOS
       if (strcmp(ifap->ifa_name, "en0") && strcmp(ifap->ifa_name, "en1"))
 #else
-      if (strcmp(ifap->ifa_name, primaryInterface))
+      // Try either wifi or one of the cellular network interfaces. There are
+      // other pdp_ipN interfaces, so this might be incorrect for other
+      // networks and phone models, but it works for me on an iPhone 6 on 4G.
+      if (strcmp(ifap->ifa_name, "en0") && strcmp(ifap->ifa_name, "pdp_ip0"))
 #endif
       {
         continue;
